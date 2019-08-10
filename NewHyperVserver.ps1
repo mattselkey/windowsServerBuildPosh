@@ -2,7 +2,7 @@
 
 try{
 
-    write-host Installing Hyper-V role -Foregroundcolor Green  
+    write-host "Installing Hyper-V role" -ForegroundColor Green  
 
     Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 
@@ -10,6 +10,8 @@ try{
 
 }
 catch{
-
-
+    
+    write-host "Error Installing Hyper-V role $($_)" -ForegroundColor Red
+    Pause
+    Exit-PSHostProcess  
 }
