@@ -7,7 +7,7 @@ Param(
 
 Begin{
 
-    Write-Host "removing an spaces from thumprint if present" -ForegroundColor Green
+    Write-Host "Removing an spaces from thumprint if present" -ForegroundColor Green
 
     [string]$ThumpPrint = $ThumpPrintInput.replace(' ','')
 
@@ -15,7 +15,7 @@ Begin{
 
 Process{
 
-	
+	Write-Host "Checking for certifcate with thumbprint $($ThumpPrint)." -ForegroundColor Green
     Get-ChildItem -path cert:\LocalMachine\My | Where-Object {$_.Thumbprint -ieq $ThumpPrint }
 
 }
