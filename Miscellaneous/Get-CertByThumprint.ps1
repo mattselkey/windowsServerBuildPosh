@@ -9,7 +9,7 @@ Begin{
 
     Write-Host "removing an spaces from thumprint if present" -ForegroundColor Green
 
-[string]$ThumpPrint = $ThumpPrintInput.replace(' ','')
+    [string]$ThumpPrint = $ThumpPrintInput.replace(' ','')
 
 }
 
