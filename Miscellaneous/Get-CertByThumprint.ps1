@@ -15,6 +15,7 @@ Begin{
 
 Process{
 
+	
     Get-ChildItem -path cert:\LocalMachine\My | Where-Object {$_.Thumbprint -ieq $ThumpPrint }
 
 }
