@@ -56,4 +56,5 @@ catch{
 
 }
 
-
+#would also need to configure default switch
+New-VMSwitch -name ExternalSwitch  -NetAdapterName Ethernet -AllowManagementOS $true
