@@ -2,5 +2,5 @@
         
       "ServerName":"server1", 
       "IP":"129.168.1.4", 
-      "features":"HyperV" 
+      "features":["HyperV","iis","dns"] 
     }
