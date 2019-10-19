@@ -1,0 +1,1 @@
+get-adcomputer -SearchBase "$($searchbase)" -Filter * | ForEach-Object  {invoke-gpupdate -Computer $_.Name -RandomDelayInMinute 0; "Refreshing host $_."}
